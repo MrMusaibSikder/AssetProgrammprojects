@@ -1,0 +1,60 @@
+body {
+    font-family: 'Kalpurush', 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f7f7f7;
+    color: #222;
+}
+
+/* Prothom Alo Signature Red Theme */
+.pa-red-bg {
+    background-color: #e21b22;
+}
+
+.pa-red-text {
+    color: #e21b22;
+}
+
+.brand-title {
+    font-family: 'Times New Roman', Georgia, serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Navigation Link Styling */
+.nav-link-pa {
+    color: #333;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.nav-link-pa:hover {
+    color: #e21b22;
+}
+
+/* Card Hover Animation */
+.news-card-title {
+    font-weight: 700;
+    color: #111;
+    text-decoration: none;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+}
+
+.news-card-title:hover {
+    color: #e21b22;
+}
+
+/* Lead News Highlight */
+.lead-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.section-border {
+    border-bottom: 2px solid #e21b22;
+    font-weight: 800;
+}
