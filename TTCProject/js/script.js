@@ -113,3 +113,62 @@ function handleContactSubmit(event) {
     document.getElementById('contact-form').reset();
     return true;
 }
+
+
+// Dark Mode Toggle
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('dark-theme');
+    const isDark = body.classList.contains('dark-theme');
+    localStorage.setItem('ttc_theme', isDark ? 'dark' : 'light');
+}
+
+// Load Saved Theme
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('ttc_theme') === 'dark') {
+        document.body.classList.add('dark-theme');
+    }
+});
+
+
+function filterFAQ() {
+    const query = document.getElementById('faq-search').value.toLowerCase();
+    const buttons = document.getElementsByClassName("faq-accordion-btn");
+    
+    for (let btn of buttons) {
+        const text = btn.innerText.toLowerCase();
+        const panel = btn.nextElementSibling;
+        if (text.includes(query)) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+            panel.style.maxHeight = null;
+        }
+    }
+}
+
+
+document.getElementById('user-mobile')?.addEventListener('input', function(e) {
+    const val = e.target.value;
+    if (/^[0-9]{11}$/.test(val)) {
+        e.target.classList.remove('is-invalid');
+        e.target.classList.add('is-valid');
+    } else {
+        e.target.classList.remove('is-valid');
+        e.target.classList.add('is-invalid');
+    }
+});
+
+
+window.onscroll = function () {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn?.classList.remove("d-none");
+    } else {
+        btn?.classList.add("d-none");
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
