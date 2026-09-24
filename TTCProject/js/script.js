@@ -172,3 +172,39 @@ window.onscroll = function () {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// Rain Effect Generator for Banner
+function createRainEffect() {
+    const rainContainer = document.getElementById('rain-overlay');
+    if (!rainContainer) return;
+
+    const dropCount = 40; // Rain density
+
+    for (let i = 0; i < dropCount; i++) {
+        const drop = document.createElement('div');
+        drop.classList.add('drop');
+        drop.style.left = Math.random() * 100 + '%';
+        drop.style.animationDuration = (0.7 + Math.random() * 0.8) + 's';
+        drop.style.animationDelay = Math.random() * 2 + 's';
+        rainContainer.appendChild(drop);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', createRainEffect);
+
+// Floating Butterfly Generator
+function createButterflyEffect() {
+    const banner = document.getElementById('mainBanner');
+    if (!banner) return;
+
+    for (let i = 0; i < 6; i++) {
+        const butterfly = document.createElement('div');
+        butterfly.classList.add('butterfly');
+        butterfly.style.left = (Math.random() * 80) + '%';
+        butterfly.style.animationDuration = (6 + Math.random() * 6) + 's';
+        butterfly.style.animationDelay = (Math.random() * 4) + 's';
+        banner.appendChild(butterfly);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', createButterflyEffect);
