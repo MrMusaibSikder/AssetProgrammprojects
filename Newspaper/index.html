@@ -3,39 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>দৈনিক দিগন্ত - Prothom Alo Style Newspaper</title>
-    <!-- Bootstrap 5 CSS -->
+    <title>দৈনিক দিগন্ত - প্রধান পাতা</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Top Date & Social Bar -->
+    <!-- Top Utility Bar -->
     <div class="bg-light border-bottom py-1 small">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="text-secondary fw-semibold">
-                <i class="fa-regular fa-calendar-days me-1 pa-red-text"></i>
-                <span id="bengali-date">আজকের তারিখ...</span>
-            </div>
+        <div class="container d-flex justify-content-between">
+            <span id="bengali-date" class="text-secondary fw-semibold">আজকের তারিখ...</span>
             <div>
-                <a href="#" class="text-dark me-3"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="text-dark me-3"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="text-dark me-2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-dark me-2"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#" class="text-dark"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
     </div>
 
-    <!-- Header / Brand Logo -->
+    <!-- Header -->
     <header class="bg-white py-3 border-bottom text-center">
-        <div class="container">
-            <a href="index.html" class="brand-title">দৈনিক দিগন্ত</a>
-            <p class="text-muted small mb-0 fw-semibold">সত্য প্রকাশে অবিরত • অনলাইন সংস্করণ</p>
-        </div>
+        <a href="index.html" class="brand-title">দৈনিক দিগন্ত</a>
+        <p class="text-muted small mb-0 fw-semibold">সত্য প্রকাশে অবিরত • অনলাইন সংস্করণ</p>
     </header>
 
-    <!-- Navigation Menu (Prothom Alo Style) -->
+    <!-- Main Multi-Page Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top shadow-sm">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#paNav">
@@ -43,144 +36,47 @@
             </button>
             <div class="collapse navbar-collapse" id="paNav">
                 <div class="navbar-nav me-auto">
-                    <a class="nav-link-pa pa-red-text" href="#">সর্বশেষ</a>
-                    <a class="nav-link-pa" href="#">বাংলাদেশ</a>
-                    <a class="nav-link-pa" href="#">রাজনীতি</a>
-                    <a class="nav-link-pa" href="#">আন্তর্জাতিক</a>
-                    <a class="nav-link-pa" href="#">বাণিজ্য</a>
-                    <a class="nav-link-pa" href="#">মতামত</a>
-                    <a class="nav-link-pa" href="#">খেলা</a>
-                    <a class="nav-link-pa" href="#">প্রযুক্তি</a>
-                    <a class="nav-link-pa" href="#">বিনোদন</a>
+                    <a class="nav-link-pa active" href="index.html">প্রচ্ছদ</a>
+                    <a class="nav-link-pa" href="bangladesh.html">বাংলাদেশ</a>
+                    <a class="nav-link-pa" href="tech.html">প্রযুক্তি</a>
+                    <a class="nav-link-pa" href="sports.html">খেলা</a>
+                    <a class="nav-link-pa" href="about.html">আমাদের সম্পর্কে</a>
                 </div>
-                <!-- Search Input -->
                 <div class="d-flex">
                     <input type="text" id="pa-search-input" class="form-control form-control-sm me-2" placeholder="সংবাদ খুঁজুন..." onkeyup="searchNews()">
-                    <button class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Breaking News Ticker -->
-    <div class="pa-red-bg text-white py-2">
-        <div class="container d-flex align-items-center">
-            <span class="badge bg-dark me-3">শিরোনাম</span>
-            <marquee behavior="scroll" direction="left" class="small fw-semibold">
-                🚨 রাজধানী ঢাকায় শুরু হলো তিন দিনব্যাপী আন্তর্জাতিক তথ্যপ্রযুক্তি প্রদর্শনী | 📈 এশিয়ার শেয়ারবাজারে বড় ধরনের ঊর্ধ্বগতি | 🎓 আইসিটি স্কলারশিপের নতুন ব্যাচের আবেদন শুরু
-            </marquee>
-        </div>
-    </div>
-
-    <!-- Main Content Area Grid -->
+    <!-- Main Content Grid -->
     <div class="container my-4">
         <div class="row g-4">
-            
-            <!-- Main News Section (Left 8 Cols) -->
             <div class="col-lg-8">
-                
-                <!-- Lead News (Hero Item) -->
                 <div class="card border-0 bg-white p-3 shadow-sm mb-4 news-item">
-                    <div class="row g-3 align-items-center">
-                        <div class="col-md-7">
-                            <span class="badge bg-danger mb-2">বিশেষ সংবাদ</span>
-                            <h2 class="lead-title mb-2">
-                                <a href="#" class="news-card-title">কৃত্রিম বুদ্ধিমত্তা ও আধুনিক ওয়েব প্রযুক্তিতে নতুন বিপ্লব</a>
-                            </h2>
-                            <p class="text-secondary small">
-                                প্রযুক্তি খাতে কৃত্রিম বুদ্ধিমত্তার সংযোজন বিশ্বব্যাপী সফটওয়্যার ইঞ্জিনিয়ারিং ও ওয়েব ডেভেলপমেন্টের ধারায় ব্যাপক পরিবর্তন আনছে।
-                            </p>
-                            <span class="text-muted small"><i class="fa-regular fa-clock me-1"></i> ১ ঘণ্টা আগে</span>
-                        </div>
-                        <div class="col-md-5">
-                            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&h=350&fit=crop" class="img-fluid rounded" alt="Lead News">
-                        </div>
-                    </div>
+                    <span class="badge bg-danger mb-2 w-auto" style="width: fit-content;">প্রধান খবর</span>
+                    <h2 class="fw-bold mb-2"><a href="#" class="news-card-title">জাতীয় অর্থনীতিতে ডিজিটাল প্রযুক্তির অভাবনীয় বিপ্লব</a></h2>
+                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=350&fit=crop" class="img-fluid rounded my-2" alt="Main News">
+                    <p class="text-secondary small">ডিজিটাল পেমেন্ট ব্যবস্থা এবং ই-কমার্স সম্প্রসারণের ফলে অর্থনীতির গতি ব্যাপকভাবে বৃদ্ধি পেয়েছে।</p>
                 </div>
-
-                <!-- Secondary News Grid (4 Columns) -->
-                <h4 class="section-border pb-2 mb-3">জাতীয় ও রাজনীতি</h4>
-                <div class="row g-3">
-                    <div class="col-md-6 news-item">
-                        <div class="card border-0 bg-white p-2 shadow-sm h-100">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=220&fit=crop" class="card-img-top rounded" alt="Business">
-                            <div class="card-body px-1">
-                                <h6><a href="#" class="news-card-title">রপ্তানি খাতে ইতিবাচক ধারা, বাড়ছে বৈদেশিক মুদ্রার রিজার্ভ</a></h6>
-                                <span class="text-muted small">২ ঘণ্টা আগে</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 news-item">
-                        <div class="card border-0 bg-white p-2 shadow-sm h-100">
-                            <img src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=400&h=220&fit=crop" class="card-img-top rounded" alt="Sports">
-                            <div class="card-body px-1">
-                                <h6><a href="#" class="news-card-title">এশিয়া কাপের ফাইনাল প্রস্তুত, শক্ত অবস্থানে জাতীয় ক্রিকেট দল</a></h6>
-                                <span class="text-muted small">৩ ঘণ্টা আগে</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
-            <!-- Sidebar Section (Right 4 Cols) -->
             <div class="col-lg-4">
-                
-                <!-- Popular Tabs Widget -->
-                <div class="bg-white p-3 shadow-sm rounded mb-4">
-                    <ul class="nav nav-tabs border-bottom mb-3" id="popTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active fw-bold text-dark" id="p-tab" data-bs-toggle="tab" data-bs-target="#p-content">সর্বাধিক পঠিত</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link fw-bold text-dark" id="l-tab" data-bs-toggle="tab" data-bs-target="#l-content">আলোচিত</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="popTabContent">
-                        <div class="tab-pane fade show active" id="p-content">
-                            <div class="d-flex mb-3 align-items-center news-item">
-                                <span class="fs-2 fw-bold text-muted me-3">১</span>
-                                <h6><a href="#" class="news-card-title">স্মার্ট সিটি প্রকল্পের কাজ শেষ পর্যায়ে, উন্মোচন আগামী সপ্তাহে</a></h6>
-                            </div>
-                            <div class="d-flex mb-3 align-items-center border-top pt-2 news-item">
-                                <span class="fs-2 fw-bold text-muted me-3">২</span>
-                                <h6><a href="#" class="news-card-title">নতুন ফ্রিল্যান্সিং পলিসি প্রকাশ করল ডাক ও তথ্যপ্রযুক্তি বিভাগ</a></h6>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="l-content">
-                            <div class="d-flex mb-3 align-items-center news-item">
-                                <span class="fs-2 fw-bold text-muted me-3">১</span>
-                                <h6><a href="#" class="news-card-title">বিশ্ববাজারে জ্বালানি তেলের দামে রেকর্ড পতন</a></h6>
-                            </div>
-                        </div>
-                    </div>
+                <div class="bg-white p-3 shadow-sm rounded">
+                    <h5 class="section-border pb-2 mb-3">সর্বাধিক পঠিত</h5>
+                    <p class="news-item border-bottom pb-2"><a href="#" class="news-card-title">১. ঢাকায় শুরু হয়েছে আন্তর্জাতিক তথ্যপ্রযুক্তি মেলা</a></p>
+                    <p class="news-item border-bottom pb-2"><a href="#" class="news-card-title">২. বিশ্বকাপ বাছাইপর্বে বিশাল জয় পেল বাংলাদেশ</a></p>
+                    <p class="news-item"><a href="#" class="news-card-title">৩. ফ্রিল্যান্সারদের জন্য নতুন নীতিমালা ঘোষণা</a></p>
                 </div>
-
-                <!-- Newsletter Subscription -->
-                <div class="bg-dark text-white p-4 rounded shadow-sm">
-                    <h5 class="fw-bold mb-2"><i class="fa-regular fa-paper-plane me-2 pa-red-text"></i>ইমেইল সাবস্ক্রিপশন</h5>
-                    <p class="small text-secondary mb-3">প্রতিদিনের গুরুত্বপূর্ণ শিরোনাম বিনামূল্যে পেতে সাবস্ক্রাইব করুন।</p>
-                    <form onsubmit="alert('ধন্যবাদ! আপনার সাবস্ক্রিপশন সম্পন্ন হয়েছে।'); return false;">
-                        <input type="email" class="form-control mb-2" placeholder="আপনার ইমেইল ঠিকানা" required>
-                        <button type="submit" class="btn btn-danger w-100 fw-bold">সাবস্ক্রাইব</button>
-                    </form>
-                </div>
-
             </div>
-
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white pt-4 pb-3 mt-5 border-top border-danger border-3">
-        <div class="container text-center">
-            <h3 class="brand-title text-white">দৈনিক দিগন্ত</h3>
-            <p class="small text-secondary">© ২০২৬ দৈনিক দিগন্ত। সর্বস্বত্ব সংরক্ষিত। ডিজাইন ও পরিচালনায়: মোঃ মুসাইব সিকদার</p>
-        </div>
+    <!-- Shared Footer -->
+    <footer class="bg-dark text-white py-4 text-center mt-5">
+        <h3 class="brand-title text-white">দৈনিক দিগন্ত</h3>
+        <p class="small text-secondary mb-0">© ২০২৬ দৈনিক দিগন্ত। সর্বস্বত্ব সংরক্ষিত।</p>
     </footer>
 
-    <!-- Bootstrap & Custom Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
