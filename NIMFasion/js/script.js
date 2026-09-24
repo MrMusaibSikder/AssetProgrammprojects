@@ -52,7 +52,7 @@ function updateSmartClock() {
     `;
 }
 
-// 1 second পর পর সময় আপডেট হবে
+// 1 second interval e update korbe
 setInterval(updateSmartClock, 1000);
 updateSmartClock();
 

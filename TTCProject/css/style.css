@@ -1,0 +1,145 @@
+/* Custom Styles for TTC Website */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Custom Navbar Styling */
+.navbar-custom {
+    background-color: #0d6efd;
+}
+
+/* Framework-Free Custom Unordered List Styling (Requirement 5 & 12) */
+.custom-member-list {
+    list-style: none; /* No list style */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.custom-member-list li {
+    background-color: #ffffff; /* Background color */
+    border: 2px solid #0d6efd; /* Border */
+    border-radius: 8px; /* Radius */
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.custom-member-list li:hover {
+    background-color: #0d6efd;
+    color: #ffffff;
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+/* Custom Collapsible Accordion for FAQ (Requirement d-i & 11) */
+.faq-accordion-btn {
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.4s;
+}
+
+.faq-accordion-btn:hover, .faq-accordion-btn.active {
+    background-color: #0b5ed7;
+}
+
+.faq-panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+
+/* Footer Styles */
+.footer-section {
+    background-color: #111827 !important;
+    border-top: 3px solid #0d6efd;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0d6efd !important;
+    padding-left: 5px;
+}
+
+.footer-section .btn-outline-light {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.footer-section .btn-outline-light:hover {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transform: translateY(-3px);
+}
+
+
+/* Live Pulsing Dot for Smart Clock */
+.live-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #0dcaf0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgba(13, 202, 240, 0.4);
+    animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(13, 202, 240, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(13, 202, 240, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(13, 202, 240, 0);
+    }
+}
+
+
+/* Feedback Card Styling */
+.feedback-card {
+    background: #ffffff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.feedback-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(13, 110, 253, 0.12) !important;
+    border-color: rgba(13, 110, 253, 0.3) !important;
+}
+
+.fs-7 {
+    font-size: 0.75rem;
+}

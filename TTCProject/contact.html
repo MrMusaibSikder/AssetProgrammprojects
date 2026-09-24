@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTC - Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="index.html">TTC Website</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row g-4">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm">
+                    <h3 class="fw-bold mb-3">Send Us a Message</h3>
+                    <form id="contact-form" onsubmit="return handleContactSubmit(event)">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" id="user-name" class="form-control" required placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" id="user-email" class="form-control" required placeholder="example@domain.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mobile Number (11 Digits)</label>
+                            <input type="text" id="user-mobile" class="form-control" required placeholder="01712345678">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea id="user-message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Form</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Information & Google Map -->
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm mb-4">
+                    <h3 class="fw-bold mb-3">Contact Information</h3>
+                    <p><i class="fa-solid fa-location-dot me-2 text-primary"></i> <strong>Address:</strong> Technical Training Center, Main Campus, Dhaka</p>
+                    <p><i class="fa-solid fa-envelope me-2 text-primary"></i> <strong>Email:</strong> info@ttc.edu.bd</p>
+                    <p><i class="fa-solid fa-phone me-2 text-primary"></i> <strong>Phone:</strong> 01700000000</p>
+                </div>
+                
+                <!-- Integrated Google Map -->
+                <div class="rounded overflow-hidden shadow-sm">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902442430136!2d90.39108031536266!3d23.750858094676832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b888ad33913b%3A0x3f3630f0f5b9d290!2sDhaka!5e0!3m2!1sen!2sbd!4v1620000000000!5m2!1sen!2sbd" width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
