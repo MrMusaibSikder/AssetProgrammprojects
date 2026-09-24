@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIM Fashion - Home</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Top Bar -->
+    <div class="bg-light border-bottom py-1 text-muted small">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fa-regular fa-clock me-1"></i>
+                <span id="datetime-display" class="fw-bold text-primary"></span>
+            </div>
+            <div>
+                <a href="login.html" class="text-decoration-none text-secondary me-3">My Account</a>
+                <a href="#" onclick="alert('Wishlist feature coming soon!')" class="text-decoration-none text-secondary me-3">Wishlist</a>
+                <a href="login.html" class="text-decoration-none text-secondary me-3">Login</a>
+                <a href="signup.html" class="text-decoration-none text-secondary">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blue Navigation Bar -->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                <i class="fa-solid fa-shirt me-2"></i>NIM Fashion
+            </a>
+            
+            <form class="d-flex mx-auto col-lg-5 col-12 my-2 my-lg-0" onsubmit="event.preventDefault(); alert('Search process initiated!');">
+                <input class="form-control me-2" type="search" placeholder="Search fashion products..." aria-label="Search">
+                <button class="btn btn-warning" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product-detail.html">Product Detail</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button class="btn btn-outline-light position-relative" onclick="location.href='cart.html'">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container mt-4">
+        <!-- Banner Slider -->
+        <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner rounded-3">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200" class="d-block w-100" style="height:380px; object-fit:cover;" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h3>NIM Fashion Summer Collection</h3>
+                        <p>Up to 50% Off on Premium Shirts and Casual Wear.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200" class="d-block w-100" style="height:380px; object-fit:cover;" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h3>Trending Denim & Pants</h3>
+                        <p>Discover modern fit styles for everyday wear.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1200" class="d-block w-100" style="height:380px; object-fit:cover;" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h3>Exclusive Modern Aesthetics</h3>
+                        <p>Tailored quality directly delivered to you.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Best Sellers -->
+        <h3 class="fw-bold border-start border-primary border-4 ps-2 mb-4">Best Sellers</h3>
+        <div class="row g-4 mb-5">
+            <div class="col-md-3 col-sm-6">
+                <div class="card custom-card h-100">
+                    <div class="card-img-container">
+                        <span class="badge-category">Best Seller</span>
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500" alt="Casual Shirt">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-6 fw-bold">Classic White Cotton Shirt</h5>
+                        <p class="text-muted small">100% Breathable Cotton</p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$29.99</span>
+                            <button class="btn btn-sm btn-outline-primary" 
+                              onclick="addToCart('Classic White Cotton Shirt', 29.99, 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500')">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card custom-card h-100">
+                    <div class="card-img-container">
+                        <span class="badge-category">Popular</span>
+                        <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?w=500" alt="Jeans pant Shirt">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-6 fw-bold">Slim Fit Denim Jeans</h5>
+                        <p class="text-muted small">Stretchable Dark Blue Jeans</p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$45.00</span>
+                           <button class="btn btn-sm btn-outline-primary" 
+                             onclick="addToCart('Classic White Cotton Shirt', 29.99, 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500')">
+                             <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                             </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card custom-card h-100">
+                    <div class="card-img-container">
+                        <span class="badge-category">Trending</span>
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500" alt="Printed Shirt">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-6 fw-bold">Printed Hawaiian Shirt</h5>
+                        <p class="text-muted small">Vibrant Beach Design</p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$32.50</span>
+                            <button class="btn btn-sm btn-outline-primary" 
+                              onclick="addToCart('Printed Hawaiian Shirt', 32.50, 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500')">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                         </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card custom-card h-100">
+                    <div class="card-img-container">
+                        <span class="badge-category">Top Rated</span>
+                        <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=500" alt="Chino Pants">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-6 fw-bold">Premium Khaki Chino Pants</h5>
+                        <p class="text-muted small">Smart Casual Fit</p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$39.99</span>
+                            <button class="btn btn-sm btn-outline-primary" 
+                              onclick="addToCart('Premium Khaki Chino Pants', 39.99, 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=500')">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                         </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Products -->
+        <h3 class="fw-bold border-start border-primary border-4 ps-2 mb-4">New Products</h3>
+        <div class="row g-4 mb-5">
+            <div class="col-md-3 col-sm-6">
+                <div class="card custom-card h-100">
+                    <div class="card-img-container">
+                        <span class="badge-category bg-success">New</span>
+                        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500" alt="Formal Shirt">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-6 fw-bold">Executive Blue Shirt</h5>
+                        <p class="text-muted small">Wrinkle-Free Premium Fabric</p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$49.99</span>
+                            <button class="btn btn-sm btn-outline-primary" 
+                              onclick="addToCart('Executive Blue Shirt', 49.99, 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500')">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                         </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card custom-card h-100">
+                    <div class="card-img-container">
+                        <span class="badge-category bg-success">New</span>
+                        <img src="https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?w=500" alt="Black Denim">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-6 fw-bold">Washed Black Denim</h5>
+                        <p class="text-muted small">Modern Fit</p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$54.00</span>
+                            <button class="btn btn-sm btn-outline-primary" 
+                              onclick="addToCart('Washed Black Denim', 54.00, 'https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?w=500')">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                         </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card custom-card h-100">
+                    <div class="card-img-container">
+                        <span class="badge-category bg-success">New</span>
+                        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500" alt="Graphic Tee">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-6 fw-bold">Urban Crewneck T-Shirt</h5>
+                        <p class="text-muted small">Soft Combed Cotton</p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$22.00</span>
+                            <button class="btn btn-sm btn-outline-primary" 
+                              onclick="addToCart('Urban Crewneck T-Shirt', 22.00, 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500')">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                         </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card custom-card h-100">
+                    <div class="card-img-container">
+                        <span class="badge-category bg-success">New</span>
+                        <img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?w=500" alt="Jacket">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-6 fw-bold">Summer Blazer Jacket</h5>
+                        <p class="text-muted small">Tailored Fit</p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$89.99</span>
+                            <button class="btn btn-sm btn-outline-primary" 
+                              onclick="addToCart('Summer Blazer Jacket', 89.99, 'https://images.unsplash.com/photo-1479064555552-3ef4979f8908?w=500')">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                         </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Black Footer -->
+    <footer class="text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase fw-bold text-white">NIM Fashion</h5>
+                    <p>Designed using HTML5, CSS3, Bootstrap 5, and JavaScript to fulfill Job Sheet 02 specifications.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="signup.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Contact</h5>
+                    <p class="mb-0">Support: support@nimfashion.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 border-top border-secondary text-muted">
+            © 2026 NIM Fashion. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
