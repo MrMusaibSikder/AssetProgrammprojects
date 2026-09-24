@@ -53,3 +53,30 @@ function searchNews() {
         item.style.display = text.includes(input) ? 'block' : 'none';
     });
 }
+
+// Function to handle real-time user comment submission
+function addComment(event) {
+    event.preventDefault();
+    
+    const nameInput = document.getElementById('commenter-name');
+    const messageInput = document.getElementById('commenter-message');
+    const commentList = document.getElementById('comments-list');
+
+    if (!nameInput.value || !messageInput.value) return;
+
+    // Create new comment element
+    const newComment = document.createElement('div');
+    newComment.className = 'border-bottom pb-2 mb-2 bg-light p-2 rounded';
+    newComment.innerHTML = `
+        <strong class="small d-block text-dark">${nameInput.value}</strong>
+        <span class="text-secondary d-block mb-1" style="font-size: 0.75rem;">এখনই পোস্ট করা হয়েছে</span>
+        <p class="small mb-0 text-dark">${messageInput.value}</p>
+    `;
+
+    // Append to top of comment list
+    commentList.prepend(newComment);
+
+    // Reset input fields
+    nameInput.value = '';
+    messageInput.value = '';
+}
