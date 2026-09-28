@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #d9534f;
+    --dark-color: #2b2b2b;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.top-bar {
+    background-color: var(--dark-color);
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    color: var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 12px 18px !important;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: var(--primary-color);
+    color: #fff !important;
+    border-radius: 4px;
+}
+
+.hero-slider img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.hero-caption {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+}
+
+.btn-primary-custom:hover {
+    background-color: #c9302c;
+    color: #fff;
+}
+
+.zoom-box {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.zoom-box img {
+    transition: transform 0.4s ease;
+    width: 100%;
+}
+
+.zoom-box:hover img {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: #ccc;
+}
+
+footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #1a1a1a;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="top-bar py-2">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <div>
+                <i class="fa-solid fa-envelope me-1"></i> info@gourmethaven.com |
+                <i class="fa-solid fa-phone ms-2 me-1"></i> +880 1234 567890
+            </div>
+            <div>
+                <span id="liveClock" class="me-3 fw-bold text-warning"></span>
+                <a href="reservation.html" class="me-2"><i class="fa-solid fa-utensils me-1"></i> Reservation</a> |
+                <a href="login.html" class="ms-2 me-2">Login</a> |
+                <a href="signup.html" class="ms-2">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Logo" width="40" class="me-2">
+                <span class="fw-bold fs-4 text-danger">Gourmet Haven</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dish-detail.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login/Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-slider">
+        <div id="foodCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/hero-banner.jpg" class="d-block w-100" alt="Special Dish">
+                    <div class="carousel-caption d-none d-md-block hero-caption">
+                        <h1 class="display-5 fw-bold">Delicious Meals Prepared Daily</h1>
+                        <p>Fresh ingredients, exquisite tastes, and cozy environment.</p>
+                        <a href="reservation.html" class="btn btn-primary-custom btn-lg">Book a Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Special Dishes</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/special-1.jpg" class="card-img-top" alt="Grilled Chicken">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Grilled Chicken</h5>
+                            <p class="card-text text-muted">Juicy tender chicken served with herbs & vegetables.</p>
+                            <h6 class="text-danger fw-bold">$14.99</h6>
+                            <a href="dish-detail.html" class="btn btn-primary-custom mt-2">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/special-2.jpg" class="card-img-top" alt="Pasta Alfredo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pasta Alfredo</h5>
+                            <p class="card-text text-muted">Rich creamy white sauce pasta with garlic bread.</p>
+                            <h6 class="text-danger fw-bold">$12.50</h6>
+                            <a href="dish-detail.html" class="btn btn-primary-custom mt-2">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/special-3.jpg" class="card-img-top" alt="Beef Steak">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Beef Steak</h5>
+                            <p class="card-text text-muted">Prime beef grilled to perfection with mashed potatoes.</p>
+                            <h6 class="text-danger fw-bold">$22.00</h6>
+                            <a href="dish-detail.html" class="btn btn-primary-custom mt-2">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Chef's Recommendation</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/chef-1.jpg" class="img-fluid rounded shadow" alt="Chef Special">
+                </div>
+                <div class="col-md-6 mt-3 mt-md-0">
+                    <h3>Signature Seafood Platter</h3>
+                    <p class="text-muted">A handpicked assortment of fresh tiger prawns, calamari, and grilled fish fillet cooked in garlic butter sauce.</p>
+                    <a href="menu.html" class="btn btn-outline-danger">Explore Full Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Customer Testimonials</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card p-3 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">"The food was absolutely amazing! Excellent service and warm atmosphere."</p>
+                            <h6 class="fw-bold mb-0">- Sarah Johnson</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-3 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">"Best steak house in town. The reservation process was seamless."</p>
+                            <h6 class="fw-bold mb-0">- Michael Brown</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4 bg-danger text-white text-center">
+        <div class="container">
+            <h3 class="mb-3">Subscribe to Our Newsletter</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-6 d-flex">
+                    <input type="email" class="form-control me-2" placeholder="Enter your email">
+                    <button class="btn btn-dark">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h5 class="text-white mb-3">Gourmet Haven</h5>
+                    <p>Providing authentic taste and quality dining experiences since 2010.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-white mb-3">Opening Hours</h5>
+                    <p class="mb-1">Mon - Fri: 10:00 AM - 10:00 PM</p>
+                    <p>Sat - Sun: 11:00 AM - 11:00 PM</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-white mb-3">Follow Us</h5>
+                    <a href="#" class="me-2 text-white fs-5"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="me-2 text-white fs-5"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom py-2 text-center text-muted">
+        <small>&copy; 2026 Gourmet Haven. All Rights Reserved.</small>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

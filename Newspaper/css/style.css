@@ -87,3 +87,71 @@ footer a:hover {
     color: #fff;
     transform: translateY(-3px);
 }
+
+
+/* Premium Newspaper Navigation Styles */
+.top-header-bar {
+    background-color: #111;
+    color: #e0e0e0;
+    font-size: 0.85rem;
+}
+
+.brand-header-area {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.brand-title {
+    font-family: 'Georgia', serif;
+    font-weight: 900;
+    font-size: 2.9rem;
+    color: #111;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+/* Premium Sticky Navigation Bar */
+.main-pa-navbar {
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+    border-bottom: 2px solid #e21b22;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.nav-link-pa {
+    color: #222;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 12px 14px;
+    display: inline-block;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.nav-link-pa:hover, .nav-link-pa.active {
+    color: #e21b22;
+}
+
+.nav-link-pa.active::after, .nav-link-pa:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    right: 12px;
+    height: 3px;
+    background-color: #e21b22;
+}
+
+.pa-search-box .form-control {
+    border-radius: 20px 0 0 20px;
+    border-color: #ddd;
+    font-size: 0.85rem;
+}
+
+.pa-search-box .btn {
+    border-radius: 0 20px 20px 0;
+    background-color: #e21b22;
+    color: #fff;
+    border: none;
+}
