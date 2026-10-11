@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MD Musaib Sikder - Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #000000;
+      background-color: #ffffff;
+      width: 210mm;
+      height: 297mm;
+      padding: 10mm 12mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 9.5pt;
+      line-height: 1.3;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 4px;
+    }
+    header h1 {
+      font-size: 18pt;
+      color: #000000;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    header h2 {
+      font-size: 10.5pt;
+      color: #000000;
+      margin-top: 1px;
+      font-weight: 600;
+    }
+    .contact-info {
+      margin-top: 4px;
+      font-size: 8.5pt;
+      color: #000000;
+    }
+    .contact-info a {
+      color: #0f766e;
+      text-decoration: none;
+    }
+    .section-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #000000;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid #0f766e;
+      padding-bottom: 1px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+    }
+    section {
+      margin-bottom: 2px;
+    }
+    p {
+      text-align: justify;
+      color: #000000;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 14px;
+      color: #000000;
+    }
+    li {
+      margin-bottom: 1.5px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 2px 8px;
+      font-size: 8.8pt;
+      color: #000000;
+    }
+    .skills-category {
+      font-weight: 600;
+      color: #000000;
+    }
+    .project-item, .edu-item {
+      margin-bottom: 4px;
+      color: #000000;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      color: #000000;
+      font-size: 9.2pt;
+    }
+    .item-sub {
+      font-style: italic;
+      color: #000000;
+      font-size: 8.5pt;
+      margin-bottom: 1px;
+    }
+    .quote-footer {
+      text-align: center;
+      font-weight: bold;
+      color: #000000;
+      font-size: 8.5pt;
+      border-top: 1px solid #0f766e;
+      padding-top: 4px;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>MD Musaib Sikder</h1>
+    <h2>Full-Stack Developer (C#)</h2>
+    <div class="contact-info">
+      Phone/WhatsApp: +8801681439385 | Email: mdmusaibsikder@gmail.com <br>
+      GitHub: <a href="https://github.com/MrMusaibSikder">github.com/MrMusaibSikder</a> | 
+      LinkedIn: <a href="https://linkedin.com/in/musaib-sikder">linkedin.com/in/musaib-sikder</a>
+    </div>
+  </header>
+
+  <!-- 1. PROFESSIONAL SUMMARY -->
+  <section>
+    <div class="section-title">Professional Summary</div>
+    <p>
+      Highly motivated Full-Stack Developer with a strong academic foundation in Biological Science and extensive experience building modern web and cross-platform mobile applications. Deeply proficient in C#, React.js, Angular, Node.js, Express, ASP.NET Core Web API, and SQL Server / PostgreSQL. Passionate about Clean Architecture, scalable RESTful APIs, and responsive UIs with an emphasis on writing maintainable code.
+    </p>
+  </section>
+
+  <!-- 2. TECHNICAL SKILLS (WITH UNDERLINE NOW) -->
+  <section>
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skills-category">Frontend & Web:</div>
+      <div>React.js (Hooks, Redux, Context API), Angular, JavaScript (ES6+), HTML5, CSS3, jQuery, Ajax</div>
+      
+      <div class="skills-category">Backend & API:</div>
+      <div>C#, Node.js, Express.js, ASP.NET Core Web API, ASP.NET MVC</div>
+      
+      <div class="skills-category">Mobile & DB:</div>
+      <div>.NET MAUI, SQL Server, PostgreSQL, MongoDB Atlas, ADO.NET, EF Core</div>
+      
+      <div class="skills-category">Tools & Architecture:</div>
+      <div>Socket.io, Git, GitHub, VS Code, Visual Studio, Postman, Swagger, Clean Architecture, JWT, RBAC, QuestPDF</div>
+    </div>
+  </section>
+
+  <!-- 3. KEY PROJECTS -->
+  <section>
+    <div class="section-title">Key Projects</div>
+    
+    <div class="project-item">
+      <div class="item-header">
+        <span>School Management Application</span>
+        <span>React.js, Node.js, Express.js, SQL Server, JWT, QuestPDF</span>
+      </div>
+      <ul>
+        <li>Architected and developed a full-stack management solution leveraging Clean Architecture.</li>
+        <li>Implemented secure JWT authentication alongside Role-Based Access Control (RBAC).</li>
+        <li>Engineered RESTful APIs with SQL Server integration and connected responsive React components.</li>
+        <li>Generated professional PDF reports (result sheets, invoices, ID cards) using QuestPDF.</li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <div class="item-header">
+        <span>Course Hub Application</span>
+        <span>React.js, Node.js, Express.js, PostgreSQL</span>
+      </div>
+      <ul>
+        <li>Engineered a full-featured course hub platform following Clean Architecture design patterns.</li>
+        <li>Designed interactive admin/user dashboards backed by a scalable PostgreSQL database schema.</li>
+        <li>Optimized frontend dynamic state handling using React Context API and Axios for API consumption.</li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <div class="item-header">
+        <span>Tour Management System API</span>
+        <span>Node.js, Express.js, ASP.NET Core Web API, SQL Server</span>
+      </div>
+      <ul>
+        <li>Created backend RESTful APIs handling tour bookings, user registrations, and package filtering.</li>
+        <li>Ensured high reliability through robust request validation and query optimization for datasets.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. CORE COMPETENCIES -->
+  <section>
+    <div class="section-title">Core Competencies</div>
+    <ul>
+      <li><strong>Analytical & Logical Problem Solving:</strong> Translating complex business requirements into modular code.</li>
+      <li><strong>Software Craftsmanship:</strong> Focusing on Clean Architecture, reusable code, and maintainable project structures.</li>
+      <li><strong>Career Adaptability & Communication:</strong> Clear technical documentation, git discipline, and effective teamwork.</li>
+    </ul>
+  </section>
+
+  <!-- 5. EDUCATION & CREDENTIALS -->
+  <section>
+    <div class="section-title">Education & Credentials</div>
+    <div class="edu-item">
+      <div class="item-header">
+        <span>Master of Science (M.Sc.) & Bachelor of Science (B.Sc. Hons) in Zoology</span>
+        <span>National University, Bangladesh</span>
+      </div>
+      <div class="item-sub">M.Sc. CGPA: 3.40/4.00 (2021) | B.Sc. CGPA: 3.22/4.00 (2020)</div>
+    </div>
+    <div class="edu-item">
+      <div class="item-header">
+        <span>Professional Trainings & Certifications</span>
+      </div>
+      <ul>
+        <li>3-Month Course on Web Design Assets</li>
+        <li>360-Hour ICT & Computer Application Course</li>
+      </ul>
+    </div>
+    <p style="font-size: 8.5pt; margin-top: 2px;">
+      <strong>Languages:</strong> Bengali (Native), English (Professional Working), Hindi & Urdu (Conversational) | 
+      <strong>Credentials:</strong> Valid Bangladesh Driving License & Passport Holder.
+    </p>
+  </section>
+
+  <!-- BOLD FOOTER MOTO -->
+  <div class="quote-footer">
+    "Relentless in dedication, unstoppable in facing complex challenges, and driven strictly by technical excellence and growth rather than financial focus."
+  </div>
+
+</body>
+</html>
